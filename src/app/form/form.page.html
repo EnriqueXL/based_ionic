@@ -1,0 +1,30 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>form</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-list>
+        <ion-item>
+            <ion-label floating>Nombre:</ion-label>
+            <ion-input type="text" [(ngModel)]="datos.nombre"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label floating>Correo:</ion-label>
+            <ion-input type="text" [(ngModel)]="datos.correo"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label floating>Universidad:</ion-label>
+            <ion-input type="text" [(ngModel)]="datos.universidad"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-button round (click)="save()" routerLink="/home">Guardar</ion-button>
+        </ion-item>
+    </ion-list>
+
+</ion-content>
